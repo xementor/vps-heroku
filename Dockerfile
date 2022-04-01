@@ -8,6 +8,7 @@ RUN apt-get -qqy update \
         sudo \
         supervisor \
         xvfb x11vnc novnc websockify \
+        apt-utils \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
